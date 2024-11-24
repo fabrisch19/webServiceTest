@@ -1,0 +1,35 @@
+.nav-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 8;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el fondo */
+  right: 20px;  /* Ajusta la distancia desde la derecha */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 6px rgba(68, 68, 68, 0.705);
+  cursor: pointer;
+  z-index: 1000; /* Asegúrate de que el ícono esté encima de otros elementos */
+}
+
+.my-float {
+  font-size: 30px; /* Ajusta el tamaño del ícono */
+  color: #25d366;  /* Cambia el color del ícono si lo necesitas */
+}

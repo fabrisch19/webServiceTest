@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación - Maximiliano Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    
+    <link rel="stylesheet" href="iconoWhatsFlotante/whats.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="iconoWhatsFlotante/whats2.css">
+    <div class="nav-bottom">
+       <button type="button" class="whatsapp-button">
+         <i class="fa fa-whatsapp my-float"></i>
+       </button>
+     </div>
+     
+     <script src="js/script3.js"></script>
+   <header>
+        <nav>
+            <div class="menu-icon" id="menu-toggle">
+                <ion-icon name="menu-outline" class="icon"></ion-icon>
+            </div>
+            <img src="imagenes/logo.png" alt="Logo" class="logo">
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                <a href="ubicacion.html">Ubicación</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de Ubicación -->
+    <section class="ubicacion">
+        <h2 class="ubicacion-titulo">¿Dónde estamos ubicados?</h2>
+        <p class="ubicacion-descripcion">Visítanos en nuestra sede para obtener el mejor servicio en reparaciones. A continuación, te mostramos nuestra ubicación en el mapa:</p>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3289.799689519388!2d-58.77684482515532!3d-34.45723234977523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc98d1acc6d9c3%3A0xabc06e23402d9d1e!2sGral.%20San%20Mart%C3%ADn%201450%2C%20B1664ITP%20Manuel%20Alberti%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727740877860!5m2!1ses!2sar"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!--Footer pie de pagina-->
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="icon-elem">
+                <a href="https://wa.me/5491165078234?text=" class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="#" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    
+        <ul class="menu">
+            <li class="menu-elem"><a href="index.html" class="menu-icon">Inicio</a></li>
+            <li class="menu-elem"><a href="servicios.html" class="menu-icon">Servicios</a></li>
+            <li class="menu-elem"><a href="sobre-nosotros.html" class="menu-icon">Sobre nosotros</a></li>
+            <li class="menu-elem"><a href="ubicacion.html" class="menu-icon">Ubicacion</a></li>
+        </ul>
+    
+        <div class="text">
+            <p>&copy; 2024 Maximiliano Service. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+<script>
+    // JavaScript para manejar el menú desplegable
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Alterna la clase activa en nav-links
+        menuIcon.classList.toggle('active'); // Alterna la clase activa en el icono
+    });
+</script>
+</body>
+
+</html>

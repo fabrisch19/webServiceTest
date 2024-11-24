@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Estilos para el header y navegación */
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Estilo para ocultar el icono */
+.hidden {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .menu-icon {
+    font-size: 32px;
+    cursor: pointer;
+    display: none; /* Oculta el icono en pantallas grandes */
+}
+
+nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #696969;
+    margin: 0 10px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+nav .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: #000; /* Cambia el color del icono si lo deseas */
+}
+
+
+.carousel-inner img {
+    max-height: 500px; /* Ajusta la altura máxima según lo que necesites */
+    object-fit: cover; /* Asegura que las imágenes mantengan su proporción */
+}
+
+
+/* Encabezado con imagen de fondo */
+.encabezado-img {
+    background-image: url(/imagenes\ de\ prueba/1.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: black;
+}
+
+.encabezado-img p {
+    font-size: 20px;
+    color:white;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.encabezado-img h1 {
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.servicios h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.servicios p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Contenedor de los servicios */
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Cada cuadro de servicio */
+.servicio {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.servicio h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f4f8; /* Fondo claro para mayor contraste */
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007BFF; /* Color del título */
+    font-family: 'Roboto', sans-serif; /* Tipografía más moderna */
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra más definida */
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px); /* Desplazamiento al pasar el ratón */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Efecto hover */
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los campos */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #007BFF; /* Color de los títulos */
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 30px 10px; /* Reduce el padding en pantallas más pequeñas */
+    }
+
+    form {
+        padding: 20px; /* Reduce el padding del formulario */
+    }
+}
+
+/* Estilos para el responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px; /* Tamaño de fuente para móviles */
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block; /* Muestra el icono del menú en pantallas pequeñas */
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        position: absolute;
+        background-color: #dfdfdf;
+        top: 60px; /* Ajusta según la altura del encabezado */
+        left: 0;
+        right: 0;
+        display: none; /* Oculta los enlaces de navegación por defecto */
+        padding: 20px 0;
+        z-index: 1; /* Asegura que esté por encima de otros elementos */
+    }
+
+    nav .nav-links.active {
+        display: flex; /* Muestra los enlaces cuando se activa el menú */
+    }
+
+    .logo {
+        display: none; /* Oculta el logo cuando se abre el menú en móvil */
+    }
+}
+
+
+
+/* Media Queries para hacer el diseño responsive */
+@media (max-width: 1200px) {
+    .servicio {
+        width: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .encabezado-img {
+        height: 400px;
+    }
+
+    .encabezado-img h1 {
+        font-size: 40px;
+    }
+
+    .servicio {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 80%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .encabezado-img h1 {
+        font-size: 30px;
+    }
+
+    .encabezado-img p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .encabezado-img {
+        height: 300px;
+    }
+
+    .encabezado-img h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+}
+
+
+
+
+/* MENU */
+
+.menu {
+    display: flex; /* Usa flexbox para alinear los elementos del menú */
+    justify-content: center; /* Centra el menú */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    margin: 10px 0; /* Espaciado vertical */
+    padding: 0; /* Quita el padding */
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+.menu-icon-titulo {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    white-space: nowrap; /* Evita que el texto se corte */
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center; /* Alinea verticalmente ícono y texto */
+    gap: 10px; /* Espaciado entre el ícono y el texto */
+}
+
+.menu-icon:hover {
+    opacity: 1; /* Hace que el texto sea completamente visible al pasar el ratón */
+}
+
+.text {
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin: 15px 0; /* Espaciado vertical */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Estilos para el logo */
+.logo {
+    height: 50px; /* Ajusta la altura según tu diseño */
+    margin-right: 20px; /* Espacio entre el logo y los enlaces de navegación */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+
+
+/* Sección de Sobre Nosotros */
+.sobre-nosotros {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.sobre-nosotros h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sobre-nosotros p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Sección de historia */
+.historia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Ajustes de imagen de historia */
+.historia-img img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historia-texto {
+    max-width: 600px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.historia-texto h3 {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.historia-texto p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Sección de ubicación */
+.ubicacion {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.ubicacion-titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ubicacion-descripcion {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas */
+    .historia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia-img img {
+        width: 90%; /* Cambiar a un ancho más pequeño en pantallas pequeñas */
+    }
+
+    .historia-texto {
+        padding-left: 0; /* Eliminar el padding en pantallas pequeñas */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .sobre-nosotros h2 {
+        font-size: 28px; /* Reducir el tamaño del título */
+    }
+
+    .sobre-nosotros p {
+        font-size: 16px; /* Reducir el tamaño del texto */
+    }
+
+    .ubicacion-titulo {
+        font-size: 1.5rem; /* Reducir tamaño del título de ubicación */
+    }
+
+    .ubicacion-descripcion {
+        font-size: 0.9rem; /* Reducir tamaño del texto de descripción */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para pantallas muy pequeñas */
+    .sobre-nosotros h2 {
+        font-size: 24px; /* Reducir aún más el tamaño del título */
+    }
+
+    .sobre-nosotros p {
+        font-size: 14px; /* Reducir aún más el tamaño del texto */
+    }
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado vertical */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Footer avanzado */
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado vertical */
+}
+
+.social-icon {
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos */
+    margin-bottom: 10px; /* Espaciado inferior */
+    padding: 0; /* Quita el padding */
+}
+
+.icon-elem {
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+.icon {
+    font-size: 32px; /* Tamaño del icono */
+    margin: 0 10px; /* Espaciado lateral */
+    transition: 0.5s; /* Transición suave para el efecto hover */
+    color: rgb(0, 0, 0); /* Color del icono */
+}
+
+.icon:hover {
+    transform: translateY(-5px); /* Mueve el icono hacia arriba al pasar el ratón */
+}
+
+.menu {
+    display: flex; /* Usa flexbox para alinear los elementos del menú */
+    justify-content: center; /* Centra el menú */
+    align-items: center; /* Centra verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    margin: 10px 0; /* Espaciado vertical */
+    padding: 0; /* Quita el padding */
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+.menu-icon {
+    color: rgb(255, 255, 255); /* Color del texto del menú */
+    font-size: 20px; /* Tamaño de fuente */
+    display: inline-block; /* Para que el padding funcione */
+    text-decoration: none; /* Quita el subrayado */
+    margin: 5px 10px; /* Espaciado lateral */
+    opacity: 0.75; /* Opacidad inicial */
+    transition: 0.3s; /* Transición suave para el efecto hover */
+}
+
+.menu-icon:hover {
+    opacity: 1; /* Hace que el texto sea completamente visible al pasar el ratón */
+}
+
+.text {
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin: 15px 0; /* Espaciado vertical */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Media Queries para el footer */
+@media (max-width: 768px) {
+    .icon {
+        font-size: 28px; /* Tamaño del icono en pantallas más pequeñas */
+    }
+
+    .menu-icon {
+        font-size: 18px; /* Tamaño del texto del menú en pantallas más pequeñas */
+    }
+
+    .text {
+        font-size: 18px; /* Tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
